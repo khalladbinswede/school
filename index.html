@@ -11,8 +11,8 @@
 .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff1f}
 .hero:before{width:420px;height:420px;left:-130px;top:-260px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
 .hero:after{width:280px;height:280px;right:-100px;bottom:-210px;box-shadow:0 0 0 45px #ffffff08}
-.top{max-width:1120px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
-.brand small{display:block;opacity:.7}.year{padding:7px 13px;border-radius:999px;background:#ffffff13;border:1px solid #ffffff2b;font-size:13px}
+.top{max-width:1120px;margin:auto;padding:18px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:32px;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:15px;min-width:0}.brand>div:last-child{display:grid;align-content:center;text-align:right;min-height:66px}.brand b{display:block;line-height:1.35;font-size:17px}.brand small{margin-top:4px;line-height:1.3;font-size:17px;font-weight:600}.brand small{display:block;opacity:.7}.school-logo{width:66px;height:66px;flex:0 0 66px;border-radius:20px;background:linear-gradient(145deg,#ffffff18,#ffffff09);border:1px solid #ffffff35;display:grid;place-items:center;box-shadow:0 9px 24px #001a2d25}.school-logo svg{width:56px;height:56px;display:block}.year{padding:9px 17px;border-radius:999px;background:#ffffff13;border:1px solid #ffffff2b;font-size:13px;font-weight:800;white-space:nowrap;text-align:center;align-self:center;justify-self:end;line-height:1.2}
 .hero-content{max-width:1120px;margin:8px auto 0;padding:0 22px 28px;position:relative;z-index:2}
 .kicker{display:inline-flex;align-items:center;gap:8px;color:#bce9e6;font-weight:700;font-size:13px}.dot{width:8px;height:8px;background:#70e0bd;border-radius:50%;box-shadow:0 0 0 5px #70e0bd22}
 .hero p{font-size:14px;line-height:1.6;max-width:700px;color:#e5f2f7;margin:10px 0 0}
@@ -30,11 +30,18 @@ main{max-width:1120px;margin:-32px auto 50px;padding:0 22px;position:relative;z-
 .empty{text-align:center;padding:45px;color:#708090;display:none}
 .credits{max-width:1120px;margin:0 auto 25px;padding:0 22px}.creditbox{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#e5ebef;border:1px solid #e5ebef;border-radius:20px;overflow:hidden}.credit{background:#fff;padding:19px 24px}.credit small{color:#81909d;display:block}.credit strong{color:var(--ink);font-size:18px}
 footer{text-align:center;padding:24px;color:#788794;font-size:14px}
-@media(max-width:650px){.hero{min-height:215px}.top{padding:14px 16px}.hero-content{padding:0 18px 24px}.hero p{font-size:13px}main{padding:0 14px;margin-top:-27px}.grid{grid-template-columns:1fr}.creditbox{grid-template-columns:1fr}.desc{min-height:auto}}
+@media(max-width:650px){.top{grid-template-columns:1fr auto;gap:10px;padding:14px 15px}.brand{gap:9px}.brand b{font-size:12px}.brand small{font-size:13px}.school-logo{width:48px;height:48px;flex-basis:48px;border-radius:14px}.school-logo svg{width:40px;height:40px}.year{justify-self:end;margin:0;padding:7px 9px;font-size:10px}.hero{min-height:215px}.top{padding:14px 16px}.hero-content{padding:0 18px 24px}.hero p{font-size:13px}main{padding:0 14px;margin-top:-27px}.grid{grid-template-columns:1fr}.creditbox{grid-template-columns:1fr}.desc{min-height:auto}}
 </style>
 </head><body>
 <section class="hero">
-<div class="top"><div class="brand"><div><b>متوسطة خلّاد بن سويد الأنصاري</b><small>النشاط الطلابي</small></div></div><div class="year">العام الدراسي ١٤٤٨هـ</div></div>
+<div class="top"><div class="brand"><div class="school-logo" aria-label="شعار المدرسة">
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
+ <circle cx="60" cy="22" r="7" fill="none" stroke="#70e0bd" stroke-width="5"/>
+ <path d="M60 91C49 76 36 70 20 71V40c17-1 30 5 40 18" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M60 91c11-15 24-21 40-20V40c-17-1-30 5-40 18" fill="none" stroke="#70e0bd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M60 58v33" fill="none" stroke="#55b8e8" stroke-width="4" stroke-linecap="round"/>
+ <path d="M31 84c12 0 21 3 29 10M89 84c-12 0-21 3-29 10" fill="none" stroke="#55b8e8" stroke-width="3.5" stroke-linecap="round"/>
+</svg></div><div><b>متوسطة خلّاد بن سويد الأنصاري</b><small>النشاط الطلابي</small></div></div><div class="year">العام الدراسي ١٤٤٨هـ</div></div>
 <div class="hero-content"><div class="kicker"><span class="dot"></span> مساحة توثّق الإبداع والإنجاز</div><p>نافذة رقمية تستعرض أنشطة المدرسة وتقاريرها، وتوثّق مشاركة طلابنا وإنجازاتهم خلال العام الدراسي.</p></div>
 </section>
 <main>
@@ -48,4 +55,4 @@ footer{text-align:center;padding:24px;color:#788794;font-size:14px}
 <section class="credits"><div class="creditbox"><div class="credit"><small>رائد النشاط</small><strong>أحمد السحيمي</strong></div><div class="credit"><small>مدير المدرسة</small><strong>فهد السحيمي</strong></div></div></section>
 <footer>متوسطة خلّاد بن سويد الأنصاري · العام الدراسي ١٤٤٨هـ</footer>
 <script>function filterCards(){const q=document.getElementById('search').value.trim().toLowerCase();let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=c.innerText.toLowerCase().includes(q);c.style.display=ok?'block':'none';if(ok)n++});document.getElementById('none').style.display=n?'none':'block'}</script>
-</body></html> 
+</body></html>
