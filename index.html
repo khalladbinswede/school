@@ -2,77 +2,50 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>منصة إنجاز | متوسطة خلّاد بن سويد الأنصاري</title>
+<title>الأنشطة المدرسية | متوسطة خلّاد بن سويد الأنصاري</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
-:root{--ink:#0b2545;--blue:#176b9b;--cyan:#55b7c9;--green:#2a9d73;--paper:#f7fafc;--muted:#64748b}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tajawal,Arial,sans-serif;background:var(--paper);color:#172033}
-.hero{position:relative;overflow:hidden;min-height:390px;background:linear-gradient(135deg,#071c35 0%,#0c4169 55%,#16869a 100%);color:#fff}
+:root{--ink:#0b2545;--blue:#176b9b;--green:#2a9d73;--bg:#f7fafc;--muted:#64748b}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Tajawal,Arial,sans-serif;background:var(--bg);color:#172033}
+.hero{position:relative;overflow:hidden;min-height:230px;background:linear-gradient(135deg,#071c35 0%,#0c4169 55%,#16869a 100%);color:#fff}
 .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff1f}
-.hero:before{width:420px;height:420px;left:-130px;top:-210px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
-.hero:after{width:280px;height:280px;right:-100px;bottom:-160px;box-shadow:0 0 0 45px #ffffff08}
-.top{max-width:1120px;margin:auto;padding:26px 22px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
-.brand{display:flex;gap:12px;align-items:center}.mark{width:47px;height:47px;border-radius:15px;background:#ffffff18;border:1px solid #ffffff35;display:grid;place-items:center;font-weight:800;font-size:20px}
-.brand small{display:block;opacity:.7}.year{padding:9px 15px;border-radius:999px;background:#ffffff13;border:1px solid #ffffff2b}
-.hero-content{max-width:1120px;margin:28px auto 0;padding:0 22px;position:relative;z-index:2}
-.kicker{display:inline-flex;align-items:center;gap:8px;color:#bce9e6;font-weight:700}.dot{width:8px;height:8px;background:#70e0bd;border-radius:50%;box-shadow:0 0 0 5px #70e0bd22}
-h1{font-size:clamp(38px,7vw,68px);line-height:1.1;margin:16px 0 12px;letter-spacing:-1px}.hero p{font-size:18px;line-height:1.9;max-width:650px;color:#e5f2f7;margin:0}
-main{max-width:1120px;margin:-54px auto 50px;padding:0 22px;position:relative;z-index:3}
+.hero:before{width:420px;height:420px;left:-130px;top:-260px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
+.hero:after{width:280px;height:280px;right:-100px;bottom:-210px;box-shadow:0 0 0 45px #ffffff08}
+.top{max-width:1120px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.brand small{display:block;opacity:.7}.year{padding:7px 13px;border-radius:999px;background:#ffffff13;border:1px solid #ffffff2b;font-size:13px}
+.hero-content{max-width:1120px;margin:8px auto 0;padding:0 22px 28px;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:8px;color:#bce9e6;font-weight:700;font-size:13px}.dot{width:8px;height:8px;background:#70e0bd;border-radius:50%;box-shadow:0 0 0 5px #70e0bd22}
+.hero p{font-size:14px;line-height:1.6;max-width:700px;color:#e5f2f7;margin:10px 0 0}
+main{max-width:1120px;margin:-32px auto 50px;padding:0 22px;position:relative;z-index:3}
 .panel{background:#fff;border-radius:24px;box-shadow:0 22px 55px #0a29461c;border:1px solid #e7edf2;padding:18px}
 .search{display:flex;align-items:center;gap:12px;background:#f4f8fa;border-radius:16px;padding:4px 15px}.search span{font-size:21px}.search input{border:0;background:transparent;width:100%;padding:13px 2px;font:inherit;font-size:16px;outline:0}
-.heading{display:flex;justify-content:space-between;align-items:end;margin:35px 3px 16px}.heading h2{margin:0;color:var(--ink);font-size:27px}.heading p{margin:5px 0 0;color:var(--muted)}.count{font-weight:700;color:var(--green);background:#eaf8f2;padding:7px 13px;border-radius:999px}
+.heading{margin:35px 3px 16px}.heading h2{margin:0;color:var(--ink);font-size:27px}.heading p{margin:5px 0 0;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
 .card{position:relative;background:#fff;border:1px solid #e4ebf0;border-radius:24px;overflow:hidden;box-shadow:0 9px 30px #15324a0b;transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px #15324a18}
 .visual{height:145px;background:linear-gradient(135deg,#0b3156,#167d91);position:relative;overflow:hidden}.visual:before{content:"</>";position:absolute;left:24px;bottom:8px;font-size:72px;font-weight:800;color:#ffffff12;direction:ltr}.visual:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-35px;top:-60px;border:25px solid #ffffff0b}
 .icon{position:absolute;right:22px;top:24px;width:58px;height:58px;border-radius:18px;background:#ffffff18;border:1px solid #ffffff35;color:#fff;display:grid;place-items:center;font-size:27px}
 .date{position:absolute;left:18px;bottom:15px;background:#fff;color:var(--ink);padding:7px 11px;border-radius:10px;font-size:13px;font-weight:700}
-.content{padding:22px}.tag{font-size:13px;font-weight:700;color:var(--green);letter-spacing:.2px}.card h3{font-size:23px;margin:8px 0;color:var(--ink)}.desc{color:#5b6b7a;line-height:1.9;margin:0 0 19px;min-height:100px}
+.content{padding:22px}.tag{font-size:13px;font-weight:700;color:var(--green)}.card h3{font-size:23px;margin:8px 0;color:var(--ink)}.desc{color:#5b6b7a;line-height:1.9;margin:0 0 19px;min-height:100px}
 .actions{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #edf1f4;padding-top:16px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 16px;border-radius:12px;background:var(--ink);color:#fff;font-weight:700}.btn.disabled{opacity:.45;pointer-events:none}.status{font-size:13px;color:#8795a2}
 .empty{text-align:center;padding:45px;color:#708090;display:none}
 .credits{max-width:1120px;margin:0 auto 25px;padding:0 22px}.creditbox{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#e5ebef;border:1px solid #e5ebef;border-radius:20px;overflow:hidden}.credit{background:#fff;padding:19px 24px}.credit small{color:#81909d;display:block}.credit strong{color:var(--ink);font-size:18px}
 footer{text-align:center;padding:24px;color:#788794;font-size:14px}
-@media(max-width:650px){.hero{min-height:360px}.brand div:last-child{font-size:13px}.year{font-size:12px}.top{padding:20px 16px}.hero-content{padding:0 18px;margin-top:22px}main{padding:0 14px;margin-top:-38px}.heading{align-items:center}.heading p{display:none}.grid{grid-template-columns:1fr}.creditbox{grid-template-columns:1fr}.desc{min-height:auto}}
-
-/* رأس صفحة أكثر اختصارًا */
-.hero{min-height:245px}
-.top{padding:18px 22px}
-.hero-content{margin-top:12px}
-.hero-content .kicker{font-size:14px}
-.hero p{font-size:16px;line-height:1.7;max-width:720px;margin-top:12px}
-main{margin-top:-42px}
-@media(max-width:650px){.hero{min-height:225px}.top{padding:15px 16px}.hero-content{margin-top:8px}.hero p{font-size:14px}.year{padding:7px 11px}}
+@media(max-width:650px){.hero{min-height:215px}.top{padding:14px 16px}.hero-content{padding:0 18px 24px}.hero p{font-size:13px}main{padding:0 14px;margin-top:-27px}.grid{grid-template-columns:1fr}.creditbox{grid-template-columns:1fr}.desc{min-height:auto}}
 </style>
-</head>
-<body>
+</head><body>
 <section class="hero">
-<div class="top">
-<div class="brand"><div><b>متوسطة خلّاد بن سويد الأنصاري</b><small>النشاط الطلابي</small></div></div>
-<div class="year">١٤٤٨هـ</div>
-</div>
-<div class="hero-content">
-<div class="kicker"><span class="dot"></span> مساحة توثّق الإبداع والإنجاز</div>
-<p>نافذة رقمية تستعرض أنشطة المدرسة وتقاريرها، وتوثّق مشاركة طلابنا وإنجازاتهم خلال العام الدراسي.</p>
-</div>
+<div class="top"><div class="brand"><div><b>متوسطة خلّاد بن سويد الأنصاري</b><small>النشاط الطلابي</small></div></div><div class="year">العام الدراسي ١٤٤٨هـ</div></div>
+<div class="hero-content"><div class="kicker"><span class="dot"></span> مساحة توثّق الإبداع والإنجاز</div><p>نافذة رقمية تستعرض أنشطة المدرسة وتقاريرها، وتوثّق مشاركة طلابنا وإنجازاتهم خلال العام الدراسي.</p></div>
 </section>
 <main>
 <div class="panel"><div class="search"><span>⌕</span><input id="search" type="search" placeholder="ابحث باسم النشاط أو في الوصف..." oninput="filterCards()"></div></div>
-<div class="heading"><div><h2>الأنشطة والفعاليات</h2><p>استعرض تفاصيل الأنشطة والتقارير المنشورة</p></div></div>
-<div class="grid" id="cards">
-<article class="card">
-<div class="visual"><div class="icon">⌘</div><div class="date">١٤٤٨/٤/١٠هـ</div></div>
-<div class="content"><span class="tag">مهارات رقمية • مسابقة</span><h3>تحدي المهارات الرقمية</h3>
-<p class="desc">مسابقة تفاعلية بين الطلاب تتضمن مجموعة من التحديات والأسئلة في المهارات الرقمية، بهدف تنمية التفكير وحل المشكلات وتعزيز الاستخدام الإيجابي للتقنية في أجواء تعليمية ممتعة وتنافسية.</p>
-<div class="actions"><a class="btn disabled" href="#">عرض التقرير <span>←</span></a><span class="status">التقرير قريبًا</span></div>
-</div></article>
-</div>
+<div class="heading"><h2>الأنشطة والفعاليات</h2><p>استعرض تفاصيل الأنشطة والتقارير المنشورة</p></div>
+<div class="grid" id="cards"><article class="card"><div class="visual"><div class="icon">⌘</div><div class="date">١٤٤٨/٤/١٠هـ</div></div>
+<div class="content"><span class="tag">مهارات رقمية • مسابقة</span><h3>تحدي المهارات الرقمية</h3><p class="desc">مسابقة تفاعلية بين الطلاب تتضمن مجموعة من التحديات والأسئلة في المهارات الرقمية، بهدف تنمية التفكير وحل المشكلات وتعزيز الاستخدام الإيجابي للتقنية في أجواء تعليمية ممتعة وتنافسية.</p>
+<div class="actions"><a class="btn disabled" href="#">عرض التقرير <span>←</span></a><span class="status">التقرير قريبًا</span></div></div></article></div>
 <div class="empty" id="none">لا توجد نتائج مطابقة لبحثك.</div>
 </main>
-<section class="credits"><div class="creditbox">
-<div class="credit"><small>رائد النشاط</small><strong>أحمد السحيمي</strong></div>
-<div class="credit"><small>مدير المدرسة</small><strong>فهد السحيمي</strong></div>
-</div></section>
+<section class="credits"><div class="creditbox"><div class="credit"><small>رائد النشاط</small><strong>أحمد السحيمي</strong></div><div class="credit"><small>مدير المدرسة</small><strong>فهد السحيمي</strong></div></div></section>
 <footer>متوسطة خلّاد بن سويد الأنصاري · العام الدراسي ١٤٤٨هـ</footer>
-<script>
-function filterCards(){const q=document.getElementById('search').value.trim().toLowerCase(),cs=[...document.querySelectorAll('.card')];let n=0;cs.forEach(c=>{let ok=c.innerText.toLowerCase().includes(q);c.style.display=ok?'block':'none';if(ok)n++});document.getElementById('none').style.display=n?'none':'block'}
-</script>
+<script>function filterCards(){const q=document.getElementById('search').value.trim().toLowerCase();let n=0;document.querySelectorAll('.card').forEach(c=>{const ok=c.innerText.toLowerCase().includes(q);c.style.display=ok?'block':'none';if(ok)n++});document.getElementById('none').style.display=n?'none':'block'}</script>
 </body></html>
